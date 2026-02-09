@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+    <!-- NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <!-- ABRIL FATFACE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <!-- MULISH FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body>
+
+    
+    <h1> 7 Day Forecast</h1>
+    <h3>Enter Location's Latitude And Longitude To Get 7 Day Forecast: </h3>
+
+    <div class="input-container">
+        <label for="longitude">Longitude: </label>
+        <input type="number" id="longitude" step="any">
+        <br> <br>
+        <label for="latitude">Latitude: </label>
+        <input type="number" id="latitude" step="any">
+        <br><br>
+    </div>
+    
+    <button class="button-nav" id="getForecastButton">Forecast</button>
+    
+    <h2>Forecast Results</h2>
+    <div id="forecastResults">
+        <p>None</p>
+    </div>
+
+    <br><br>
+    <a class="back-to-home-button" href="index.html">Back to Home</a>
+    <script src="../static/js/forecast.js"></script>
+</body>
+</html?

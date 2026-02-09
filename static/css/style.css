@@ -1,0 +1,123 @@
+body{
+    text-align: center;
+    padding: 60px 40px;
+}
+
+h1{
+    font-family: "Abril Fatface", serif ;
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: "Abril Fatface", serif ;
+    font-size: 40px;
+}
+
+h3{
+    font-family: "Mulish", serif ;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p{
+    font-family: "Mulish", serif ;
+    font-size: 18px;
+    font-weight:normal;
+}
+
+.results-p{
+    font-family: "Mulish", serif ;
+    font-size: 22px;
+    font-weight:bold;
+}
+
+.results-row{
+    display: flex;
+    gap: 10px;          
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.results-row p{
+    margin: 0;
+}
+
+button{
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+.button-nav{
+    display: inline-block;      
+    background-color: #2774AE;    
+    color: white;               
+
+    text-decoration: none;    
+    text-transform: lowercase; 
+
+    padding: 16px 32px;        
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 60px;
+    stroke: none;
+    
+    box-shadow: 5px 5px 4px #FFD100;
+
+    border-radius: 5px;
+}
+
+.button-nav:hover {
+  transform: translate(5px, 5px); 
+  box-shadow: none;
+}
+
+.button-container{
+    justify-content: center;
+    margin-top: 0, auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-container{
+    justify-content: center;
+    margin-top: 0, auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-results{
+    display: block;
+    text-align: left;
+}
+
+.back-to-home-button{
+    font-family: "Mulish", serif ;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    text-decoration: none;     
+    color: #FFD100;
+    letter-spacing: 3px;
+}
+
+.back-to-home-button:hover{
+    color: #2774AE;
+}
+
+label{
+    font-family: "Mulish", serif ;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
