@@ -19,17 +19,18 @@ function getCurrentWeather() {
     }
 
     // If wrong inputs
-    if (latitude < -90 || latitude > 90) {
+    if ((latitude < -90 || latitude > 90) && (longitude < -180 || longitude > 180)) {
+        alert("Latitude must be between -90 and 90 and Longitude must be between -180 and 180");
+    }
+    else if (latitude < -90 || latitude > 90) {
         alert("Latitude must be between -90 and 90");
         return;
     } else if (longitude < -180 || longitude > 180){
         alert("Longitude must be between -180 and 180 degrees");
         return;
-    } else if ((latitude < -90 || latitude > 90) && (longitude < -180 || longitude > 180)) {
-        alert("Latitude must be between -90 and 90 and Longitude must be between -180 and 180");
-        return;
-    } 
+    }
 
+    // API URL
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,is_day,precipitation,wind_speed_10m&timezone=auto`;
 
     fetch(url)

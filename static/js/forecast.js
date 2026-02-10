@@ -24,17 +24,18 @@ function getForecast() {
     }
 
      // If wrong inputs
-    if (latitude < -90 || latitude > 90) {
+    if ((latitude < -90 || latitude > 90) && (longitude < -180 || longitude > 180)) {
+        alert("Latitude must be between -90 and 90 and Longitude must be between -180 and 180");
+    }
+    else if (latitude < -90 || latitude > 90) {
         alert("Latitude must be between -90 and 90");
         return;
     } else if (longitude < -180 || longitude > 180){
         alert("Longitude must be between -180 and 180 degrees");
         return;
-    } else if ((latitude < -90 || latitude > 90) && (longitude < -180 || longitude > 180)) {
-        alert("Latitude must be between -90 and 90 and Longitude must be between -180 and 180");
-        return;
-    } 
+    }
 
+    // API URL
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,wind_speed_10m_max,weathercode&timezone=auto`
     fetch(url)
         .then(response => response.json())
