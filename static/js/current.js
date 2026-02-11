@@ -33,6 +33,7 @@ function getCurrentWeather() {
     // API URL
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,is_day,precipitation,wind_speed_10m&timezone=auto`;
 
+    // GET
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -45,8 +46,9 @@ function getCurrentWeather() {
         document.getElementById("precipitation").textContent = current.precipitation + " mm";
         document.getElementById("windSpeed").textContent = current.wind_speed_10m;
         document.getElementById("timezone").textContent = data.timezone;
-         })
+        })
 
+    //ERROR 
     .catch(error => {
       console.error("Error fetching weather:", error);
     });

@@ -50,6 +50,7 @@ function getForecast() {
 function displayForecast(daily,timezone) {
     forecastResults.innerHTML = ""; // Clear old results
 
+    //for loop for 7 day forecast rows results
     for (let i = 0; i < daily.time.length; i++) {
         const dayHTML = `
             <div class="forecast-day">
