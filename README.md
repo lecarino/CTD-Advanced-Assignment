@@ -5,7 +5,7 @@ This project uses the Open-Meteo API to display current weather and a 7-day fore
 
 How to run:
 1. Download the repo
-2. Open index.html in your browser. (has to be browser, will not work with preview.)
+2. Open index.html in your browser
 3. Follow instructions on the webpage to either go to the "current weather" page or the "7-day forecast" page.
 
 Technologies:
